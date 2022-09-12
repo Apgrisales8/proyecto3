@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- Realizar la codificación necesaria para calcular la nota final de una materia teniendo en 
+cuenta la siguiente ponderación:
+35% del promedio de los 3 parciales.
+35% de la calificación del examen final.
+30% de la calificación de un trabajo final.
+La materia se aprueba con una nota promedio mínimo de 3, debe mostrar la nota final y 
+el mensaje de “Aprobó” o “No aprobó” de acuerdo al resultado -->
+
+
+       <!-- form -->
+<main >
+    
+<?php
+require 'f.php';
+?>
+
+<div class="form-registra">
+            
+<form action="f.php" method="post">
+ <label for="nota1">Parcial 1:</label>  <input type="number" id="p1" name="p1" min="0" max="5"  required>
+ <label for="nota2">Parcial 2:</label>  <input type="number" id="p2" name="p2" min="0" max="5" required>
+ <label for="nota3">Parcial 3: </label>  <input type="number" id="p3" name="p3" min="0" max="5"  required>
+ <label for="notaf1">Examen final:</label>  <input type="number" id="ef" name="ef" min="0" max="5"  required>
+ <label for="notaf2">Trabajo final:</label>  <input type="number" id="tf" name="tf" min="0" max="5" required>
+ <input type="submit" name="" id="submit" value="Enviar">
+   
+</form>
+</div>
+
+</main>
+
+    
+</body>
+</html>
